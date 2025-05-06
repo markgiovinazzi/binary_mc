@@ -332,8 +332,3 @@ def binary_mc(ids, N = 10000000, M_guesses = None, save_plot = True):
                    
     print_binary_diagnostics(all_Ps, slope_data, period_bins, slope_bins, gaia_ids = secondaries['source_id'])
 
-# Example usage:
-#binary_mc(['2029433521248546304', '2029432043779954432'])
-#binary_mc(['2797745549200763520', '2797745549200773120']); exit(1)
-binary_mc(['2135550755683405952', '2135550755684554112', '2135550755683407232'], save_plot = True)
-
