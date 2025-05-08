@@ -2,7 +2,7 @@ README
 
 This program crudely estimates the orbital periods and RV slopes of binary stars from the Gaia catalog using static postion information.
 
-If you use this code, please cite the relevant paper.
+If you use this code, please cite the relevant paper (Giovinazzi et al. 2025).
 
 To get started, you should clone a copy of the code to your home machine.
 
@@ -14,10 +14,11 @@ pip3 install dist/binary_mc-1.0.tar.gz
 ```
 
 **Example usage
-HD 190360 AB is a known, very wide (~3') binary star system. Suppose we are interested in how likely `B` (2029432043779954432) is to induce a non-negligible effect on `A` (Gaia DR3 2029433521248546304). We can call `binary_mc` using the two Gaia IDs and let the code do the rest!
 
-```from binary_mc import binary_mc
+HD 190360 AB is a known, very wide (~3') binary star system. Suppose we are interested in how likely `B` (Gaia DR3 2029432043779954432) is to induce a non-negligible effect on `A` (Gaia DR3 2029433521248546304). We can call `binary_mc` using the two Gaia IDs and let the code do the rest!
 
+```
+from binary_mc import binary_mc
 # query our two stars (HD 190360 A and HD 190360 B)
 binary_mc(['2029433521248546304', '2029432043779954432'])
 ```
